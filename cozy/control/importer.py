@@ -114,7 +114,7 @@ def update_database(ui, force=False):
     for path in paths:
         for directory, subdirectories, files in os.walk(path):
             for file in files:
-                if file.lower().endswith(('.mp3', '.ogg', '.flac', '.m4a', '.wav', '.opus')):
+                if file.lower().endswith(('.mp3', '.ogg', '.flac', '.m4a', '.m4b', '.wav', '.opus')):
                     path = os.path.join(directory, file)
 
                     imported = True
